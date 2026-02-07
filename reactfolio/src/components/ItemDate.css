@@ -1,0 +1,8 @@
+.dob{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    align-items: center;
+    text-shadow: 2px 2px 2px solid red;
+    background-color: rgb(211, 186, 234);
+}
