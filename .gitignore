@@ -1,6 +1,13 @@
+# OS / editor
+**/.DS_Store
+
+# Dependencies
 **/node_modules
+
+# Build outputs
 **/build
 **/dist
+
+# Env files
 **/.env
 **/.env.*
-**/.DS_Store
