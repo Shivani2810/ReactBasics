@@ -29,15 +29,27 @@ function App() {
 
 
   const[text,setText]=useState('a');
+
   function changeHandler(event)
   {
     setText(event.target.value);
      console.log(text);
   }
-  useEffect(()=>{
-    console.log("Change seen");
-  },[text]);
+  // useEffect(()=>{
+  //   console.log("Change seen");
+  // },[text]);
 
+
+  // variation 4/;
+
+  useEffect(()=>{
+    // add event listener 
+    console.log("listener added");
+
+    return ()=>{
+      console.log("listener removed");
+    }
+  })
   return (
     <div className="App">
       {/* <input type="text" onChange={changeHandler}></input> */}
