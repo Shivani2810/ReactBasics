@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import About from "./components/About";
 import Support from "./components/Support";
 import NotFound from "./components/NotFound";
+import Mainheader from "./components/Mainheader";
 import { NavLink } from "react-router-dom";
 
 function App() {
@@ -75,11 +76,13 @@ function App() {
 
 
       <Routes>
-        <Route path="/" element={<Home />} >
+        <Route path="/" element={<Mainheader/>} >
+        <Route index element={<Home/>}></Route>
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/support" element={<Support />} />
         <Route path="*" element={<NotFound />} />
+
         </Route>
       </Routes>
     </div>
